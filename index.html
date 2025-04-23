@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2</title>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center">Welcome to my website...</h1>
+    </header>
+    <nav style="text-align: end">
+      <a href="">Home</a> | <a href="">About</a> | <a href="">Contact</a> |
+    </nav>
+    <br />
+    <!-- This is a html table -->
+    <section id="tables">
+      <table border="1">
+        <caption>
+          Student Data
+        </caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>abc</td>
+            <td>18</td>
+            <td>India</td>
+          </tr>
+          <tr>
+            <td>def</td>
+            <td>20</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>xyz</td>
+            <td>22</td>
+            <td>Canada</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Total Students:</td>
+            <td>3</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <br /><br />
+      <table border="1">
+        <caption>
+          Colspan=2
+        </caption>
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>fname</td>
+          <td>lname</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>fname</td>
+          <td>lname</td>
+          <td>25</td>
+        </tr>
+      </table>
+      <br /><br />
+      <table border="1">
+        <caption>
+          Rowspan=2
+        </caption>
+        <tr>
+          <th>Name</th>
+          <td>ABc</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Phone</th>
+          <td>0123456789</td>
+        </tr>
+        <tr>
+          <td>9876543210</td>
+        </tr>
+      </table>
+      <br /><br />
+      <hr />
+    </section>
+    <section id="forms">
+      <!-- this is a html form -->
+        <h2 style="text-align: center;"><u>HTML Form</u></h2>
+      <form>
+        <label for="name">Name: &nbsp;</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+        /><br /><br />
+        <label for="email">Email: &nbsp;</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        /><br /><br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" /><br /><br />
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label><br /><br />
+        <label for="Country">Country:</label>
+        <select name="Country" id="Country">
+          <option value="1">India</option>
+          <option value="2">USA</option>
+          <option value="3">CANADA</option></select
+        ><br /><br />
+        <label for="feedback">Feedback:</label>
+        <textarea name="feedback" id="feedback"></textarea><br /><br />
+        <input type="checkbox" name="remember" id="remember" />
+        <label for="remember">Remember me</label><br /><br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+    <hr />
+    <main>
+      <!-- this is a html article -->
+      <article>
+        <h2>Title</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+          autem rerum omnis illum asperiores error sit, eligendi blanditiis
+          explicabo, distinctio corrupti quos assumenda fugit quibusdam ipsa
+          saepe magnam? Possimus, quam!
+        </p>
+      </article>
+    </main>
+    <hr />
+    <section id="remainingContent">
+      <!-- this is a figure with caption -->
+      <figure>
+        <img
+          src="webdev_image.jpeg"
+          alt="webdev_image"
+          width="500"
+          height="350"
+        />
+        <figcaption>Web Development</figcaption>
+      </figure>
+      <h3>HTML Entities:</h3>
+      <p>&copy; , &reg; , &trade; , &lt; , &gt; , &amp;</p>
+      <hr />
+      <p>
+        This&nbsp;is&nbsp;a&nbsp;paragraph&nbsp;with&nbsp;space&nbsp;between&nbsp;each&nbsp;words&nbsp;using&nbsp;html&nbsp;entity.
+      </p>
+      <p>This is a heart symbol-&hearts; , dollar-&dollar; , euro-&euro;</p>
+      <br />
+      <hr />
+      <h3>An image added using a relative path :</h3>
+      <img
+        src="/ai_image.jpeg"
+        alt="artificial_intelligence"
+        width="500"
+        height="350"
+      />
+      <h3>An image added using an absolute path:</h3>
+      <img
+        src="https://plus.unsplash.com/premium_photo-1681422570054-9ae5b8b03e46?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5zcGxhc2glMjBhcHB8ZW58MHx8MHx8fDA%3D"
+        alt=""
+        width="500"
+        height="350"
+      />
+
+      <aside>
+        <h3>Supplementary contents</h3>
+        <ul>
+          <li><a href="#">Google</a></li>
+          <li><a href="#">youtube</a></li>
+        </ul>
+      </aside>
+    </section><hr>
+    <!-- this is a footer -->
+    <footer>
+      <p>&copy; 2025 All rights reserved.</p>
+    </footer>
+  </body>
+</html>
